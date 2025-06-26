@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>Cadastro de Clientes</title>
+<h1>Cadastro de Clientes</h1>
+<h2 style="color:red">Todos os campos são de preenchimento obrigatório</h2>
+
+<fieldset>
+  <legend>Dados Pessoais</legend> 
+<form action="/action_page.php">
+  <label for="fname">Nome:</label><br>
+  <input type="text" id="fname"  placeholder="Nome Completo"><br><br>
+<label for="dataNascimento">Data de Nascimento:</label>
+<input type="date" id="dataNascimento" name="dataNascimento">
+<br><br>
+<p>Sexo:</p>
+<form>
+  <input type="radio" id="Feminino" name="sexo" value="Feminino">
+  <label for="Feminino">Feminino</label>
+  <input type="radio" id="Masculino" name="Sexo" value="Masculino">
+  <label for="Masculino">Masculino</label><br>
+</form> 
+</fieldset>
+<fieldset>
+  <legend>Informações de Contato</legend> 
+<form action="/action_page.php">
+  <label for="fname">E-mail:</label><br>
+  <input type="text" id="fname"  placeholder="@gmail.com"><br><br>
+    <label for="fname">Telefone de Contato:</label><br>
+  <input type="text" id="fname"  placeholder="(34)"><br><br>
+     <label for="fname">Website pessoal/profissional:</label><br>
+  <input type="text" id="fname"  placeholder="https://"><br><br> 
+</fieldset>
+<fieldset>
+  <legend>Localização</legend> 
+<form action="/action_page.php">
+  <label for="fname">Endereço:</label><br>
+    <input type="text" id="fname"  placeholder="Rua"><br><br>
+    <label for="fname">Numero:</label><br>
+<input type="text" id="fname" placeholder="Valor entre 1 e 9999"<br></br>
+     <label for="fname">Cidade:</label><br>
+<input type="text" id="fname"><br><br>
+<label for="fname">Estado:</label><br>
+<select id="estado" name="estado" required>
+    <option value="">Selecione o estado</option>
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+</select>
+<br><br>
+</fieldset>
+</body>
+ <div class="footer">
+    <button class="register">Cadastrar</button>
+    <button class="clear">Limpar</button>
+  </div>
+</html>
