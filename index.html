@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro de Clientes</title>
+</head>
+<body>
+
+<h1>Cadastro de Clientes</h1>
+<h2 style="color:red">Todos os campos são de preenchimento obrigatório</h2>
+
+<form action="/action_page.php">
+
+  <fieldset>
+    <legend>Dados Pessoais</legend> 
+
+    <label for="fname">Nome:</label><br>
+    <input type="text" id="fname" name="nome" placeholder="Nome Completo" required><br><br>
+
+    <label for="dataNascimento">Data de Nascimento:</label>
+    <input type="date" id="dataNascimento" name="dataNascimento" required>
+    <br><br>
+
+    <p>Sexo:</p>
+    <input type="radio" id="Feminino" name="sexo" value="Feminino" required>
+    <label for="Feminino">Feminino</label>
+    <input type="radio" id="Masculino" name="sexo" value="Masculino" required>
+    <label for="Masculino">Masculino</label><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Informações de Contato</legend> 
+
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" placeholder="@gmail.com" required><br><br>
+
+    <label for="telefone">Telefone de Contato:</label><br>
+    <input type="tel" id="telefone" name="telefone" placeholder="(34) 99999-9999" required><br><br>
+
+    <label for="website">Website pessoal/profissional:</label><br>
+    <input type="url" id="website" name="website" placeholder="https://" required><br><br> 
+  </fieldset>
+
+  <fieldset>
+    <legend>Localização</legend> 
+
+    <label for="endereco">Endereço:</label><br>
+    <input type="text" id="endereco" name="endereco" placeholder="Rua" required><br><br>
+
+    <label for="numero">Número:</label><br>
+    <input type="number" id="numero" name="numero" placeholder="Valor entre 1 e 9999" min="1" max="9999" required><br><br>
+
+    <label for="cidade">Cidade:</label><br>
+    <input type="text" id="cidade" name="cidade" required><br><br>
+
+    <label for="estado">Estado:</label><br>
+    <select id="estado" name="estado" required>
+      <option value="">Selecione o estado</option>
+      <option value="AC">Acre</option>
+      <option value="AL">Alagoas</option>
+      <option value="AP">Amapá</option>
+      <option value="AM">Amazonas</option>
+      <option value="BA">Bahia</option>
+      <option value="CE">Ceará</option>
+      <option value="DF">Distrito Federal</option>
+      <option value="ES">Espírito Santo</option>
+      <option value="GO">Goiás</option>
+      <option value="MA">Maranhão</option>
+      <option value="MT">Mato Grosso</option>
+      <option value="MS">Mato Grosso do Sul</option>
+      <option value="MG">Minas Gerais</option>
+      <option value="PA">Pará</option>
+      <option value="PB">Paraíba</option>
+      <option value="PR">Paraná</option>
+      <option value="PE">Pernambuco</option>
+      <option value="PI">Piauí</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="RN">Rio Grande do Norte</option>
+      <option value="RS">Rio Grande do Sul</option>
+      <option value="RO">Rondônia</option>
+      <option value="RR">Roraima</option>
+      <option value="SC">Santa Catarina</option>
+      <option value="SP">São Paulo</option>
+      <option value="SE">Sergipe</option>
+      <option value="TO">Tocantins</option>
+    </select><br><br>
+  </fieldset>
+
+  <div class="footer">
+    <button type="submit" class="register">Cadastrar</button>
+    <button type="reset" class="clear">Limpar</button>
+  </div>
+
+</form>
+
+</body>
+</html>
